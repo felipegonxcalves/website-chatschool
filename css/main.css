@@ -1,0 +1,150 @@
+
+@import url('reset.css');
+@import url('grid.css');
+@import url('typography.css');
+@import url('icons.css');
+@import url('menu.css');
+
+body {
+	font-family: 'Open Sans', sans-serif;
+	color: rgb(130, 130, 130);
+}
+
+#header a {
+	display: inline-block;
+	text-decoration: none;
+	padding: 10px;
+	border-radius: 5px;
+}
+
+#header a:hover, #header a.active { /* Quando o mouse estiver em cima do link */
+	/*text-decoration: underline;*/
+	background-color: rgba(84, 209, 84, 0.3);
+}
+
+#header {
+	background: #000 url("../images/background-header.jpg") no-repeat;
+	background-size: cover;
+	color: #ffffff;
+	width: 100%;
+	height: 660px;
+	position: relative;
+	padding-top: 30px;
+}
+
+#header a {
+	color: #ffffff;
+}
+
+#header nav {
+	text-align: right;  /* Alinho o texto, centro, direita, esquerda */
+}
+
+#header nav ul, #header nav ul li { /* Esse ultimo elemente, vai precisar de um elemento que tenho um li dentro de um ul dentro de um nav*/
+	display: inline-block;
+}
+
+#header .title {
+	position: absolute;
+	left: 0;
+	top: 50%;
+	transform: translate(0, 50%);
+	text-align: center;
+}
+
+#header .btn {
+	background-color: rgb(84, 209, 84);
+	color: #ffffff;
+	display: inline-block;
+	font-size: 16px;
+	border-radius: 30px;
+	padding: 10px 30px;	
+	text-decoration: none;
+	transition: ease .5s all; 
+}
+
+#header .btn:hover {
+	background-color: rgb(84, 190, 84);
+}
+
+#fotter, #team, #customers, #how-it-work {
+	text-align: center;
+	padding: 30px 0 30px 0; /* \/ > \/ < */
+}
+
+#customers .subtitle {
+	text-align: center;
+}
+
+#customers .container {
+	max-width: 1000px;
+}
+
+#customers {
+	background-color: rgb(242, 242, 242);
+}
+
+#team {
+	background-color: rgb(84, 209, 84);
+	color: white;
+}
+
+#team h2:after {	
+	background-color: rgb(255, 255, 255);	
+}
+
+#team .img-box-round {
+	width: 120px;
+	height: 120px;
+}
+
+#footer {
+	background-color: rgb(51, 51, 51);
+	text-align: left;
+}
+
+#footer, #footer a {
+	color: rgb(204, 204, 204);
+}
+
+#footer h3, #footer nav li {
+	text-transform: uppercase;
+}
+
+#footer h3:after {  /* Colocando um traço em baixo do h3 do footer */
+	content: '';
+	display: block;
+	border-bottom: 2px solid rgb(204, 204, 204);
+	width: 30px;
+}
+
+#footer nav li {
+	padding: 3px 0; /* Sentido Horário, se botar só as 2 opções, o primeiro ele aplica em cima e em baixo e o segundo nas laterais*/
+}
+
+#footer nav li a:hover {
+	color: rgb(255, 255, 255);
+}
+
+#footer .social {
+	height: 200px; /* Setei uma altura de 200px padrão */
+	line-height: 200px; /* Altura da linha do texto, centraliza o texto, só funciona com textos de uma linha só */
+	text-align: right; /* alinhei o texto a direita */
+}
+
+#footer .social a {
+	display: inline-block;
+	padding: 0 0 0 10px;
+	opacity: 1;
+}
+
+#footer .social a:hover {
+	opacity: .5;
+	transition: ease .5s all;
+}
+
+#copyright {
+	text-align: center;
+	background-color: rgb(34, 34, 34);
+	padding: 10px;
+}

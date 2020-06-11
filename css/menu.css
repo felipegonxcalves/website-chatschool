@@ -1,0 +1,5 @@
+nav ul, #header nav ul li { /* Esse ultimo elemente, vai precisar de um elemento que tenho um li dentro de um ul dentro de um nav*/
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
